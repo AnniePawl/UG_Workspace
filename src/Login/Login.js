@@ -40,9 +40,11 @@ class Login extends Component {
       <div>
         <div className="blackbg" />
         <div className="orangebg">
+          {/* Upwardly Global Logo */}
+          {/* TODO better, bigger image */}
           <img
             src="https://i.ibb.co/0GR3kX3/upwardlyglobal.png"
-            className="logo"
+            className="ug_logo"
             width="200px"
           />
         </div>
