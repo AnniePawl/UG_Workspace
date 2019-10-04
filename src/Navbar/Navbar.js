@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import Dashboard from '../Dashboard/Dashboard'
 import './Navbar.scss'
 
 class Navbar extends Component {
@@ -10,12 +12,12 @@ class Navbar extends Component {
     return (
       <div >
         <div className='navbar'>
-
-          {/* Home Logo / Link to Home */}
-          <div className='home_logo'>Home Logo</div>
-
+          {/* Home Logo (back to Dashboard) */}
+          <Link className='navbar__home_logo' to='/Dashboard'>
+            <img src='home.svg'></img>
+          </Link>
           {/* Name of Page */}
-          <p className='page_name'>Page Name Here</p>
+          <h2 className='navbar__heading'>Page Name Here</h2>
         </div>
       </div>
     )

@@ -10,4 +10,10 @@
   height: 10vh;
   width: 100%;
 }
+
+.navbar__heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+}
 /*# sourceMappingURL=Navbar.css.map */

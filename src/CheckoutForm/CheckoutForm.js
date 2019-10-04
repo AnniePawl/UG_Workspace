@@ -76,6 +76,8 @@ class CheckoutForm extends Component {
               placeholder='Reason for Checkout' />
 
           </form>
+
+          <button>Checkout</button>
         </div>
       </div>
     )
