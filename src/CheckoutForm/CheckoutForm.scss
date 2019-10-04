@@ -1,7 +1,11 @@
-
 .checkout_form_container {
+  display: flex;
+  flex-direction: column;
+
 border:1px solid black;
-width: 30vw;
+border-radius: 5px;
+background:#E5E5E5;
+width: 35vw;
 }
 
 .checkout_form {
@@ -9,7 +13,7 @@ width: 30vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  width: 35vw;
 }
 
 .input_field {
