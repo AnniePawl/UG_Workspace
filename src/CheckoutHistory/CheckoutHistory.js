@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Navbar from '../Navbar/Navbar'
 
 class CheckoutHistory extends Component {
   constructor(props) {
@@ -8,8 +9,12 @@ class CheckoutHistory extends Component {
 
   render() {
     return (
+      <div>
+        <Navbar />
 
-      <h1>This is the Checkout History Page</h1>
+
+        <h1>This is the Checkout History Page</h1>
+      </div>
     )
   }
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Navbar from '../Navbar/Navbar'
+
 
 class Dashboard extends Component {
   constructor(props) {
@@ -7,7 +9,10 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <h1>This is the Dashboard!</h1>
+      <div>
+        <Navbar />
+        <h1>This is the Dashboard!</h1>
+      </div>
     )
   }
 }
