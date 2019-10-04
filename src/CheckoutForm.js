@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './CheckoutForm.scss'
+// import './CheckoutForm.scss'
 
 class CheckoutForm extends Component {
   constructor(props) {
@@ -7,7 +7,12 @@ class CheckoutForm extends Component {
     this.state = {
       name: '',
       id: '',
-      email: ''
+      email: '',
+      phoneNumber: '',
+      checkoutDuration: '',
+      date: '',
+      reasonForCheckout: '',
+
     }
   }
 
@@ -16,21 +21,49 @@ class CheckoutForm extends Component {
       <div className='CheckoutForm'>
         <h1>Checkout Form</h1>
         <form>
-          {/* Name Field */}
-          <label>
-            Name:
-          <input
-              type='text',
-            value='' />
-          </label>
-          {/* Company ID Field */}
-          {/* Email Address Field */}
-          {/* Phone Number Field  */}
-          {/* Duration of Checkout Field */}
-          {/* Date Field */}
-          {/* TODO - make dropdown calendar */}
-          {/* Reason for Checkout Field */}
 
+          {/* Name Field */}
+          <input
+            type='text'
+            value=''
+            placeholder='Name' />
+
+          {/* Company ID Field */}
+          <input
+            type='text'
+            value=''
+            placeholder='Company ID'
+          />
+
+          {/* Email Address Field */}
+          <input
+            type='text'
+            value=''
+            placeholder='Email Address' />
+
+          {/* Phone Number Field  */}
+          <input
+            type='text'
+            value=''
+            placeholder='Phone Number' />
+
+          {/* Duration of Checkout Field */}
+          <input
+            type='text'
+            value=''
+            placeHolder='Duration of Checkout' />
+
+          {/* Date Field */} {/* TODO - make dropdown calendar */}
+          <input
+            type='type'
+            value=''
+            placeholder='Date' />
+
+          {/* Reason for Checkout Field */}
+          <input
+            type='text'
+            value=''
+            placeHolder='Reason for Checkout' />
 
         </form>
       </div>
