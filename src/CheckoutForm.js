@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import './CheckoutForm.scss'
-
+import './CheckoutForm.scss'
 class CheckoutForm extends Component {
   constructor(props) {
     super(props)
@@ -18,18 +17,20 @@ class CheckoutForm extends Component {
 
   render() {
     return (
-      <div className='CheckoutForm'>
+      <div className='checkout_form_container'>
         <h1>Checkout Form</h1>
-        <form>
+        <form className='checkout_form'>
 
           {/* Name Field */}
           <input
+            className='input_field'
             type='text'
             value=''
             placeholder='Name' />
 
           {/* Company ID Field */}
           <input
+            className='input_field'
             type='text'
             value=''
             placeholder='Company ID'
@@ -37,33 +38,38 @@ class CheckoutForm extends Component {
 
           {/* Email Address Field */}
           <input
+            className='input_field'
             type='text'
             value=''
             placeholder='Email Address' />
 
           {/* Phone Number Field  */}
           <input
+            className='input_field'
             type='text'
             value=''
             placeholder='Phone Number' />
 
           {/* Duration of Checkout Field */}
           <input
+            className='input_field'
             type='text'
             value=''
-            placeHolder='Duration of Checkout' />
+            placeholder='Duration of Checkout' />
 
           {/* Date Field */} {/* TODO - make dropdown calendar */}
           <input
+            className='input_field'
             type='type'
             value=''
             placeholder='Date' />
 
           {/* Reason for Checkout Field */}
           <input
+            className='input_field'
             type='text'
             value=''
-            placeHolder='Reason for Checkout' />
+            placeholder='Reason for Checkout' />
 
         </form>
       </div>
