@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Dashboard.css'
+import ItemRow from './ItemRow'
 class Dashboard extends Component {
   constructor(props) {
     super(props)
@@ -14,11 +16,19 @@ class Dashboard extends Component {
           {/*Checkout*/}
           <div className='gray_square checkout-square'>
             <h1 className='square_heading'>Checkout</h1>
+
             <div className='inner_squares'>
               <div className='inner_square'></div>
+
               <div className='inner_square'></div>
             </div>
-            <button className='dashboard_button'>See All Items</button>
+
+            <Link 
+              to="/InventoryOverview" 
+              className="see_items_button"
+            >
+              See All Items
+            </Link>
           </div>
 
           {/* Inventory Overview */}
@@ -44,8 +54,18 @@ class Dashboard extends Component {
         </div>
 
         <div className='squares' >
-          <div className='blue_square recent_square'>
-            <h1 className='square_heading2'>Recent Items</h1></div>
+          <div>
+            <div className='blue_square recent_square'>
+              <h1 className='square_heading2'>Recent Items</h1>
+            </div>
+            <div>
+              <ItemRow id='94875' value='Laptop5' />
+              <ItemRow id='94875' value='Laptop5' />
+              <ItemRow id='94875' value='Laptop5' />
+            </div>
+          </div>
+
+
           <div className='blue_square checked_out_square'>
             <h1 className='square_heading2'>Checked Out</h1></div>
           <div className='blue_square low_inventory_square'>

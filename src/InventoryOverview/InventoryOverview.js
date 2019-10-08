@@ -14,8 +14,10 @@ class InventoryOverview extends Component {
         <h1> This is the Inventory Overview Page!</h1>
 
         {/* Category Section */}
-        <div className='categories'>
+        <div className='category_container'>
+          <div className='categories'>
 
+          </div>
         </div>
 
         {/* Inventory Overview Buttons */}

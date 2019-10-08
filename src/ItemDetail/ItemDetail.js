@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './ItemDetail.scss'
-import Navbar from '../Navbar/Navbar'
+
 
 class ItemDetail extends Component {
   constructor(props) {
@@ -20,9 +21,12 @@ class ItemDetail extends Component {
           <div className='item_detail__buttons'>
 
             {/* Checkout button */}
-            <button classname='item_detail__button item_detail__buttons_checkout'>Checkout</button>
+            <Link to="/Checkout-Form">
+              <button classname='item_detail__button item_detail__buttons_checkout'>Checkout</button>
+            </Link>
 
             {/* Item History button */}
+
             <button classname='item_detail__button item_detail__buttons_history'>History</button>
 
             {/* Share button */}

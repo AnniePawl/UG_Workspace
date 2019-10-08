@@ -9,7 +9,11 @@ class Navbar extends Component {
   }
 
   render() {
-    console.log(this.props)
+    // console.log(this.props.location)
+    // Remove / and split pathname to render Nav Bar Heading
+    const navName = this.props.location.pathname.replace(/\//g, '')
+    const navHeading = navName.split('-').join('  ')
+
     return (
       <div >
         <div className='navbar'>
@@ -18,7 +22,7 @@ class Navbar extends Component {
             <img src='home.svg'></img>
           </Link>
           {/* Name of Page */}
-          <h2 className='navbar__heading'></h2>
+          <h2 className='navbar__heading'>{navHeading}</h2>
         </div>
       </div>
     )

@@ -1,0 +1,13 @@
+.ItemRow {
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ItemRow-id {
+  color: blue;
+  border: 1px solid;
+  width: 100px;
+  text-align: center;
+}

@@ -23,7 +23,7 @@ function App() {
 
 
         {/* <CheckoutForm /> */}
-        <Route path="/CheckoutForm" component={CheckoutForm} />
+        <Route path="/Checkout-Form" component={CheckoutForm} />
 
 
         {/* Link to Dashboard */}
@@ -31,15 +31,15 @@ function App() {
 
 
         {/* Inventory Overview Page */}
-        <Route path='/InventoryOverview' component={InventoryOverview} />
+        <Route path='/Inventory-Overview' component={InventoryOverview} />
 
         {/* Item Detail Page */}
-        <Route path='/ItemDetail'
+        <Route path='/Item-Detail'
           component={ItemDetail}
         />
 
         {/* Checkout History Page */}
-        <Route path='/CheckoutHistory'
+        <Route path='/Checkout-History'
           component={CheckoutHistory}
         />
 
