@@ -7,6 +7,7 @@ import Dashboard from './Dashboard/Dashboard'
 import CheckoutHistory from './CheckoutHistory/CheckoutHistory'
 import InventoryOverview from './InventoryOverview/InventoryOverview'
 import { BrowserRouter, Route, Link } from "react-router-dom";
+import Navbar from './Navbar/Navbar';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
+
+        <Navbar />
 
         {/* Login Page */}
         <Route path="/login" exact component={Login} />

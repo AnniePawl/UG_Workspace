@@ -10,7 +10,7 @@ class CheckoutHistory extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+
 
 
         <h1>This is the Checkout History Page</h1>

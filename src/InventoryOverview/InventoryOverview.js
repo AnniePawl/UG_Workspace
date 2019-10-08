@@ -10,8 +10,24 @@ class InventoryOverview extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+
         <h1> This is the Inventory Overview Page!</h1>
+
+        {/* Category Section */}
+        <div className='categories'>
+
+        </div>
+
+        {/* Inventory Overview Buttons */}
+        <div className='inventory_overview_buttons'>
+          <button>New Item</button>
+          <button>Share</button>
+          <button>Print</button>
+        </div>
+
+        {/* Search */}
+
+
       </div>
     )
   }

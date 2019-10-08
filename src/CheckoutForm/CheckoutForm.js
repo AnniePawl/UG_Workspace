@@ -20,7 +20,7 @@ class CheckoutForm extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+
         <div className='checkout_form_container'>
           <h1>Checkout Form</h1>
           <form className='checkout_form'>

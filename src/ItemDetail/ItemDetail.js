@@ -11,7 +11,7 @@ class ItemDetail extends Component {
     return (
       <div>
 
-        <Navbar />
+
         <div className='item_detail_page'>
 
           <h1> This is the Item Detail Page!</h1>
