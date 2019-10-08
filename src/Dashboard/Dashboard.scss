@@ -73,3 +73,17 @@
   font-size:.5em;
   text-transform: capitalize;
 }
+
+
+.inventory_inner_squares {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inventory_inner_square {
+  background-color: white;
+  height:4.5vh;
+  width: 15vw;
+  margin:5px;
+}

@@ -24,6 +24,13 @@ class Dashboard extends Component {
           {/* Inventory Overview */}
           <div className='gray_square overview_sqaure'>
             <h1 className='square_heading'>Inventory Overview</h1>
+            {/* Inventory Highlights */}
+            <div className='inventory_inner_squares'>
+              <div className='inventory_inner_square'></div>
+              <div className='inventory_inner_square'></div>
+              <div className='inventory_inner_square'></div>
+              <div className='inventory_inner_square'></div>
+            </div>
             <button className='dashboard_button'>See All Categories</button>
           </div>
 
