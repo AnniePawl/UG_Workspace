@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import ItemRow from './ItemRow'
+import logo from './reporting.png'
 class Dashboard extends Component {
   constructor(props) {
     super(props)
@@ -23,12 +24,12 @@ class Dashboard extends Component {
               <div className='inner_square'></div>
             </div>
 
-            <Link 
-              to="/InventoryOverview" 
-              className="see_items_button"
-            >
-              See All Items
+            <div className="dashboard_button">
+              <Link
+                to="/InventoryOverview">
+                See All Items
             </Link>
+            </div>
           </div>
 
           {/* Inventory Overview */}
@@ -41,37 +42,69 @@ class Dashboard extends Component {
               <div className='inventory_inner_square'></div>
               <div className='inventory_inner_square'></div>
             </div>
-            <button className='dashboard_button'>See All Categories</button>
+            <div className="dashboard_button">
+              <Link>See All Categories</Link>
+            </div>
           </div>
 
           {/* Reporting */}
           <div className='gray_square reporting_square'>
             <h1 className='square_heading'>Reporting</h1>
-            <div className='reporting_inner_square'></div>
-            <button className='dashboard_button'>See Reporting</button>
 
+            <img className='reporting_image' src={logo} />
+
+
+            <div className="dashboard_button">
+              <Link>See Reporting</Link>
+            </div>
           </div>
         </div>
 
         <div className='squares' >
+
+          {/* RECENT ITEMS */}
           <div>
             <div className='blue_square recent_square'>
               <h1 className='square_heading2'>Recent Items</h1>
             </div>
             <div>
-              <ItemRow id='94875' value='Laptop5' />
-              <ItemRow id='94875' value='Laptop5' />
-              <ItemRow id='94875' value='Laptop5' />
+              <ItemRow id='97483' value='Laptop 5' />
+              <ItemRow id='28492' value='Tablet 6' />
+              <ItemRow id='18297' value='Laptop 2' />
+              <ItemRow id='21891' value='Laptop 7' />
+              <ItemRow id='87210' value='Tablet 1' />
             </div>
           </div>
 
+          {/* CHECKED OUT */}
+          <div>
+            <div className='blue_square checked_out_square'>
+              <h1 className='square_heading2'>Checked Out</h1></div>
+            <div>
+              <ItemRow id='97483' value='Laptop 5' />
+              <ItemRow id='28492' value='Tablet 6' />
+              <ItemRow id='18297' value='Laptop 2' />
+              <ItemRow id='21891' value='Laptop 7' />
+              <ItemRow id='87210' value='Tablet 1' />
+            </div>
+          </div>
 
-          <div className='blue_square checked_out_square'>
-            <h1 className='square_heading2'>Checked Out</h1></div>
-          <div className='blue_square low_inventory_square'>
-            <h1 className='square_heading2'>Low Inventory</h1></div>
+          {/* LOW INVENTORY */}
+          <div>
+            <div className='blue_square low_inventory_square'>
+              <h1 className='square_heading2'>Low Inventory</h1></div>
+            <div>
+              <ItemRow id='97483' value='Laptop 5' />
+              <ItemRow id='28492' value='Tablet 6' />
+              <ItemRow id='18297' value='Laptop 2' />
+              <ItemRow id='21891' value='Laptop 7' />
+              <ItemRow id='87210' value='Tablet 1' />
+            </div>
+
+          </div>
+
+
         </div>
-
 
       </div>
     )

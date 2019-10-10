@@ -3,9 +3,9 @@ import './ItemRow.css'
 
 function ItemRow({ id, value }) {
   return (
-    <div className="ItemRow">
-      <div className="ItemRow-id ">{id}</div>
-      <div>{value}</div>
+    <div className="item_row">
+      <div className="item_row_id ">{id}</div>
+      <div className='item_row_value'>{value}</div>
     </div>
   )
 }
