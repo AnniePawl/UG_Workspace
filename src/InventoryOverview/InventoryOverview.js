@@ -11,7 +11,6 @@ class InventoryOverview extends Component {
     return (
       <div>
 
-        <h1> This is the Inventory Overview Page!</h1>
 
         {/* Category Section */}
         <div className='category_container'>

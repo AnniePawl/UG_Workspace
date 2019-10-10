@@ -5,7 +5,7 @@
   height:25px;
 }
 
-.item_row_id {
+.item_row_name {
   color: #50AEF4;
   border: 1px solid #333333;
   display: flex;
@@ -19,7 +19,8 @@
   color:#707070
 }
 
-.item_row_value {
+.item_row_checkout {
+  border: .5px solid #333333;
   margin-left: 5px;
   font-size: 12px; display: flex;
   justify-content: center;
@@ -31,9 +32,27 @@
   color:#707070;
 }
 
+.item_row_checkin {
+  border: .5px solid #333333;
+  margin-left: 5px;
+  font-size: 12px; display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #50AEF4
+}
+
+.item_row_notes {
+  border: .5px solid #333333;
+  margin-left: 5px;
+  font-size: 12px; display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #50AEF4
+}
+
 .checkout_history_container {
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 flex-direction: column; 
 }

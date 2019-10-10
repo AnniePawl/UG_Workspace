@@ -26,13 +26,13 @@ class Dashboard extends Component {
 
             <div className="dashboard_button">
               <Link
-                to="/InventoryOverview">
+                to="/Inventory-Overview">
                 See All Items
             </Link>
             </div>
           </div>
 
-          {/* Inventory Overview */}
+
           <div className='gray_square overview_sqaure'>
             <h1 className='square_heading'>Inventory Overview</h1>
             {/* Inventory Highlights */}
