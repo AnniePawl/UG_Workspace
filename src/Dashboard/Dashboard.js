@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import './Dashboard.css'
+import './Dashboard.scss'
 import ItemRow from './ItemRow'
 import logo from './reporting.png'
+import logo1 from './laptop.svg'
+import logo2 from './tablet.svg'
+import Navbar from '../Navbar/Navbar'
 class Dashboard extends Component {
   constructor(props) {
     super(props)
@@ -11,39 +14,47 @@ class Dashboard extends Component {
   render() {
     return (
       <div>
+        <Navbar />
 
         <div className='squares'>
 
           {/*Checkout*/}
           <div className='gray_square checkout-square'>
             <h1 className='square_heading'>Checkout</h1>
-
             <div className='inner_squares'>
-              <div className='inner_square'></div>
+              <div className='inner_square'>
+                <img className='laptop_logo' src={logo1} />
 
-              <div className='inner_square'></div>
+              </div>
+
+              <div className='inner_square'>
+                <img className='tablet_logo' src={logo2} />
+
+              </div>
             </div>
 
+            <div className="dashboard_button" >
+              <Link
+                to="/Checkout-Form">
+                Checkout Item
+            </Link>
+            </div>
+          </div>
+
+          {/* Inventory Overview */}
+          <div className='gray_square overview_sqaure'>
+            <h1 className='square_heading'>Inventory Overview</h1>
+            {/* Inventory Highlights */}
+            <div className='inventory_inner_squares'>
+              <div className='inventory_inner_square'>Office Supplies</div>
+              <div className='inventory_inner_square'>Computers</div>
+              <div className='inventory_inner_square'>Miscellaneous</div>
+            </div>
             <div className="dashboard_button">
               <Link
                 to="/Inventory-Overview">
                 See All Items
             </Link>
-            </div>
-          </div>
-
-
-          <div className='gray_square overview_sqaure'>
-            <h1 className='square_heading'>Inventory Overview</h1>
-            {/* Inventory Highlights */}
-            <div className='inventory_inner_squares'>
-              <div className='inventory_inner_square'></div>
-              <div className='inventory_inner_square'></div>
-              <div className='inventory_inner_square'></div>
-              <div className='inventory_inner_square'></div>
-            </div>
-            <div className="dashboard_button">
-              <Link>See All Categories</Link>
             </div>
           </div>
 
