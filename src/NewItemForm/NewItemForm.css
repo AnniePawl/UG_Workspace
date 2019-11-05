@@ -1,4 +1,12 @@
-.checkout_form_container {
+.new_item_square {
+  background-color: #e5e5e5;
+  width: 500px;
+  height: 680px;
+  border-radius: 5px;
+  margin: 5vh;
+}
+
+.new_item_form_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,18 +18,26 @@
           align-items: center;
 }
 
-.checkout_square {
-  background-color: #e2e2e2;
-  width: 500px;
-  height: 610px;
-  border-radius: 5px;
-  margin: 10vh;
+.new_item_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.checkout_input_field {
+.new_item_input_field {
   border-radius: 5px;
   width: 330px;
-  height: 42px;
+  height: 35px;
   margin: 10px;
   font-size: 14px;
   text-indent: 10px;
@@ -30,11 +46,11 @@
   border: none;
 }
 
-.checkout_input_field:hover {
+.new_item_input_field:hover {
   background-color: #abdbff;
 }
 
-h1.checkout_title {
+h1.new_item_title {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
@@ -42,7 +58,7 @@ h1.checkout_title {
   margin-top: 25px;
 }
 
-.checkout_form_button {
+.new_item_form_button {
   background-color: #50AEF4;
   border-radius: 5px;
   text-transform: uppercase;
@@ -54,8 +70,8 @@ h1.checkout_title {
   margin: 15px;
 }
 
-.checkout_form_button:hover {
+.new_item_form_button:hover {
   background-color: #505050;
   color: white;
 }
-/*# sourceMappingURL=CheckoutForm.css.map */
+/*# sourceMappingURL=NewItemForm.css.map */

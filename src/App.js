@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CheckoutForm from './CheckoutForm/CheckoutForm'
+import NewItemForm from './NewItemForm/NewItemForm.jsx'
 import Login from './Login/Login'
 import ItemDetail from './ItemDetail/ItemDetail'
 import Dashboard from './Dashboard/Dashboard'
@@ -24,6 +25,9 @@ function App() {
 
         {/* <CheckoutForm /> */}
         <Route path="/Checkout-Form" component={CheckoutForm} />
+
+        {/* <NewItemForm /> */}
+        <Route path="/New-Item-Form" exact component={NewItemForm} />
 
 
         {/* Link to Dashboard */}
